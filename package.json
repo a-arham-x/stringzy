@@ -1,0 +1,38 @@
+{
+  "name": "stringzy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samarth Ruia",
+  "license": "MIT",
+  "description": "A versatile string manipulation library providing a range of text utilities for JavaScript and Node.js applications.",
+  "keywords": [
+    "string",
+    "string-manipulation",
+    "text-formatting",
+    "cli",
+    "text-utils",
+    "stringify",
+    "stringer",
+    "string",
+    "text",
+    "manipulation",
+    "utilities",
+    "javascript",
+    "nodejs",
+    "text-processing",
+    "string-utils",
+    "text-utils",
+    "formatting",
+    "transformation",
+    "text-manipulation",
+    "npm-package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samarth2190/stringify.git"
+  }
+}
