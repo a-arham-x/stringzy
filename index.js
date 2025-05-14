@@ -1,10 +1,21 @@
-
-export function truncateText(text, length) {
-    if (typeof text !== "string" || typeof length !== "number") {
-      throw new Error("Invalid arguments. Expected (string, number).");
+export function truncateText(text, maxLength, suffix = '...') {
+    if (typeof text !== 'string') {
+        throw new Error("Input text must be a string.");
     }
-    return text.length > length ? text.slice(0, length) + "..." : text;
-  }
+    if (typeof maxLength !== 'number' || maxLength < 0) {
+        throw new Error("maxLength must be a non-negative number.");
+    }
+    if (typeof suffix !== 'string') {
+        throw new Error("Suffix must be a string.");
+    }
+
+    if (text.length <= maxLength) {
+        return text;
+    }
+
+    const adjustedLength = maxLength - suffix.length;
+    return text.slice(0, adjustedLength > 0 ? adjustedLength : 0) + suffix;
+}
   
 
   export function toSlug(text) {
@@ -26,10 +37,13 @@ export function truncateText(text, length) {
     return text.replace(/\b\w/g, (char) => char.toUpperCase());
   }
   
-  export function removeSpecialChars(text) {
+  export function removeSpecialChars(text, replacement = '') {
     if (typeof text !== "string") {
-      throw new Error("Invalid argument. Expected a string.");
+        throw new Error("Invalid argument. Expected a string.");
     }
-    return text.replace(/[^\w\s]/gi, "");
-  }
+    if (typeof replacement !== "string") {
+        throw new Error("Replacement must be a string.");
+    }
+    return text.replace(/[^\w\s]/gi, replacement);
+}
   
