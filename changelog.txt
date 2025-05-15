@@ -21,7 +21,6 @@ Version 1.1.1 - 2025-05-15
 
 CHANGED:
 - Updated package metadata
-- Refined TypeScript type definitions
 
 FIXED:
 - Minor bug fixes in string handling edge cases
