@@ -1,0 +1,51 @@
+CHANGELOG
+
+All notable changes to the `stringzy` package will be documented in this file.
+
+=============================================================================
+
+Version 1.1.2 - 2025-05-15
+-----------------------------------------------------------------------------
+
+ADDED:
+- Improved documentation with comprehensive README
+- Enhanced examples for all utility functions
+
+FIXED:
+- Resolved documentation rendering issues on npm website
+
+=============================================================================
+
+Version 1.1.1 - 2025-05-15
+-----------------------------------------------------------------------------
+
+CHANGED:
+- Updated package metadata
+- Refined TypeScript type definitions
+
+FIXED:
+- Minor bug fixes in string handling edge cases
+
+=============================================================================
+
+Version 1.1.0 - 2025-05-15
+-----------------------------------------------------------------------------
+
+ADDED:
+- Added extensive API documentation
+
+CHANGED:
+- Improved performance for `toSlug` function
+- Enhanced error handling across all utility functions
+
+=============================================================================
+
+Version 1.0.0 - 2025-05-14
+-----------------------------------------------------------------------------
+
+ADDED:
+- Initial release with four core utility functions:
+  - `truncateText`: Truncates text to a specified length with optional suffix
+  - `toSlug`: Converts text to URL-friendly slug format
+  - `capitalizeWords`: Capitalizes the first letter of each word
+  - `removeSpecialChars`: Removes special characters from text with optional replacement
