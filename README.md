@@ -1,4 +1,4 @@
-﻿# stringzy⚡
+﻿# stringzy
 
 [![NPM Version](https://img.shields.io/npm/v/stringzy)](https://www.npmjs.com/package/stringzy)
 [![Downloads](https://img.shields.io/npm/dt/stringzy)](https://www.npmjs.com/package/stringzy)
