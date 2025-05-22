@@ -1,49 +1,67 @@
-export function truncateText(text, maxLength, suffix = '...') {
-    if (typeof text !== 'string') {
-        throw new Error("Input text must be a string.");
-    }
-    if (typeof maxLength !== 'number' || maxLength < 0) {
-        throw new Error("maxLength must be a non-negative number.");
-    }
-    if (typeof suffix !== 'string') {
-        throw new Error("Suffix must be a string.");
-    }
+/**
+ * index.js
+ * Main entry point for the srtingzy package
+ * 
+ * This file serves as the public API for the entire library,
+ * organizing and exporting all functionality in a structured way.
+ * 
+ * @module stringzy
+ * @author Samarth Ruia
+ * @version 2.0.0
+ */
 
-    if (text.length <= maxLength) {
-        return text;
-    }
+import * as transformations from './transformations.js';
+import * as validations from './validations.js';
+import * as analysis from './analysis.js';
+import * as formatting from './formatting.js';
 
-    const adjustedLength = maxLength - suffix.length;
-    return text.slice(0, adjustedLength > 0 ? adjustedLength : 0) + suffix;
-}
-  
 
-  export function toSlug(text) {
-    if (typeof text !== "string") {
-      throw new Error("Invalid argument. Expected a string.");
-    }
-    return text
-      .toLowerCase()
-      .trim()
-      .replace(/[\s]+/g, "-")
-      .replace(/[^\w-]+/g, "");
-  }
-  
+export const {
+  truncateText,
+  toSlug,
+  capitalizeWords,
+  removeSpecialChars,
+  camelCase,
+  pascalCase,
+  snakeCase,
+  kebabCase,
+  titleCase,
+  constantCase,
+} = transformations;
 
-  export function capitalizeWords(text) {
-    if (typeof text !== "string") {
-      throw new Error("Invalid argument. Expected a string.");
-    }
-    return text.replace(/\b\w/g, (char) => char.toUpperCase());
-  }
+export const {
+  isURL,
+  isEmail,
+  isEmpty
+} = validations;
+
+export const {
+  wordCount,
+  characterCount,
+  characterFrequency
+} = analysis;
+
+export const {
+  capitalize,
+  formatNumber,
+  formatPhone
+} = formatting;
+
+export const transform = transformations;
+export const validate = validations;
+export const analyze = analysis;
+export const format = formatting;
+
+
+export default {
+  ...transformations, 
+  ...validations,
+  ...analysis,
+  ...formatting,
   
-  export function removeSpecialChars(text, replacement = '') {
-    if (typeof text !== "string") {
-        throw new Error("Invalid argument. Expected a string.");
-    }
-    if (typeof replacement !== "string") {
-        throw new Error("Replacement must be a string.");
-    }
-    return text.replace(/[^\w\s]/gi, replacement);
-}
-  
+  transform: transformations,
+  validate: validations,
+  analyze: analysis,
+  format: formatting,
+
+};
