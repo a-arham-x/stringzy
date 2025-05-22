@@ -3,6 +3,30 @@ CHANGELOG
 All notable changes to the `stringzy` package will be documented in this file.
 
 =============================================================================
+Version 2.0.0 - 2025-05-22
+-----------------------------------------------------------------------------
+
+ADDED:
+- Added a dynamic list of APIs in README
+- Divided the package into 4 modules-transformations, validations, formatting and analysis
+- Added many new APIs 
+  - `camelCase`: Converts a string to camel case
+  - `kebabCase`: Converts a string to kebab case
+  - `snakeCase`: Converts a string to snake case
+  - `titleCase`: Converts a string to title case
+  - `constantCase`: Converts a string to constant case
+  - `pascalCase`: Converts a string to pascal case
+  - `isURL`: Validates if a string is a valid URL
+  - `isEmail`: Validates if a string is a valid email address
+  - `isEmpty`: Checks if a string is empty or contains only whitespace
+  - `wordCount`: Counts the number of words in a string
+  - `characterCount`: Counts the number of characters in a string
+  - `characterFrequency`: Calculates the frequency of each character in a string
+  - `capitalize`: Capitalizes the entire string
+  - `formatNumber`: Formats a number with commas as thousands separators
+  - `formatPhone`: Formats a phone number to a standard format
+
+=============================================================================
 
 Version 1.1.2 - 2025-05-15
 -----------------------------------------------------------------------------
