@@ -54,12 +54,12 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [toSlug](#toslug) - Converts a string to a URL-friendly slug
 - [capitalizeWords](#capitalizewords) - Capitalizes the first letter of each word
 - [removeSpecialChars](#removespecialchars) - Removes special characters from a string
-- [camelCase](#camelCase) - Converts the given string to Camel Case
-- [pascaslCase](#pascalCase) - Converts the given string to Pascal Case
-- [snakeCase](#snakeCase) - Converts the given string to Snake Case   
-- [kebabCase](#kebabCase) - Converts the given string to Kebab Case
-- [titleCase](#titleCase) - Converts the given string to Title Case
-- [constantCase](#constantCase) - Converts the given string to Constant Case
+- [camelCase](#camelcase) - Converts the given string to Camel Case
+- [pascaslCase](#pascalcase) - Converts the given string to Pascal Case
+- [snakeCase](#snakecase) - Converts the given string to Snake Case   
+- [kebabCase](#kebabcase) - Converts the given string to Kebab Case
+- [titleCase](#titlecase) - Converts the given string to Title Case
+- [constantCase](#constantcase) - Converts the given string to Constant Case
 
 ###  Validations
 - [isURL](#isurl) - Checks if a string is a valid URL
@@ -169,7 +169,7 @@ removeSpecialChars('Phone: (123) 456-7890', '-');
 | text | string | required | The input string to process |
 | replacement | string | '' | String to replace special characters with |
 
-#### <a id="camelCase"></a>`camelCase(text)`
+#### <a id="camelcase"></a>`camelCase(text)`
 
 Converts the given string to Camel Case.
 
@@ -184,7 +184,7 @@ camelCase('this is a test'); // 'thisIsATest'
 | text | string | required | The input string to convert to Camel Case |
 
 
-#### <a id="pascalCase"></a>`pascalCase(text)`
+#### <a id="pascalcase"></a>`pascalCase(text)`
 Converts the given string to Pascal Case.
 
 ```javascript
@@ -198,7 +198,7 @@ pascalCase('this is a test'); // 'ThisIsATest'
 |-----------|------|---------|-------------|
 | text | string | required | The input string to convert to Pascal Case |
 
-#### <a id="snakeCase"></a>`snakeCase(text)`
+#### <a id="snakecase"></a>`snakeCase(text)`
 
 Converts the given string to Snake Case.
 
@@ -215,7 +215,7 @@ snakeCase('this is a test'); // 'this_is_a_test'
 
 
 
-#### <a id="kebabCase"></a>`kebabCase(text)`
+#### <a id="kebabcase"></a>`kebabCase(text)`
 
 Converts the given string to Kebab Case.
 
@@ -232,7 +232,7 @@ kebabCase('this is a test'); // 'this-is-a-test'
 
 
 
-#### <a id="titleCase"></a>`titleCase(text)`
+#### <a id="titlecase"></a>`titleCase(text)`
 
 Converts the given string to Title Case.
 
@@ -247,7 +247,7 @@ titleCase('this is a test'); // 'This Is A Test'
 |-----------|------|---------|-------------|
 | text | string | required | The input string to convert to Title Case |
 
-#### <a id="constantCase"></a>`constantCase(text)`
+#### <a id="constantcase"></a>`constantCase(text)`
 Converts the given string to Constant Case.
 
 ```javascript
