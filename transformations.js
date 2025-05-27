@@ -126,3 +126,9 @@ export function constantCase(text) {
     .replace(/_+/g, '_')
     .replace(/^_+|_+$/g, '');
 }
+
+export function removeWords(str, wordsToRemove) {
+  const wordsArray = Array.isArray(wordsToRemove) ? wordsToRemove : [wordsToRemove];
+  const regex = new RegExp(`\\b(${wordsArray.join('|')})\\b`, 'gi');
+  return str.replace(regex, '').replace(/\s+/g, ' ').trim();
+}
