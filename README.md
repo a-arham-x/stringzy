@@ -545,10 +545,44 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
+## Contributors
+
+<table>
+    <tbody>
+        <tr>
+        <td align="center">
+                <a href="https://github.com/Samarth2190">
+                    <img src="https://avatars.githubusercontent.com/Samarth2190" width="100px;"
+                        alt="Samarth Ruia" />
+                    <br />
+                    <sub>
+                        <b>Samarth Ruia</b>
+                    </sub>
+                </a>
+            </td>
+        <td align="center">
+                <a href="https://github.com/JohnCervantes">
+                    <img src="https://avatars.githubusercontent.com/JohnCervantes" width="100px;"
+                        alt="John Cervantes" />
+                    <br />
+                    <sub>
+                        <b>John Cervantes</b>
+                    </sub>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 ## 🙏 Acknowledgments
 
 - Thank you to all contributors and users of this package!
 - Inspired by the need for comprehensive yet simple string manipulation utilities.
+
+If you have contributed to this project and your image is not here, please let us know, and we'll be happy to add it!
 
 ---
 
