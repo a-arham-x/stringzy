@@ -56,6 +56,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [toSlug](#toslug) - Converts a string to a URL-friendly slug
 - [capitalizeWords](#capitalizewords) - Capitalizes the first letter of each word
 - [removeSpecialChars](#removespecialchars) - Removes special characters from a string
+- [removeWords](#removewords) - Removes specified words from a string
 - [camelCase](#camelcase) - Converts the given string to Camel Case
 - [pascaslCase](#pascalcase) - Converts the given string to Pascal Case
 - [snakeCase](#snakecase) - Converts the given string to Snake Case   
@@ -170,6 +171,28 @@ removeSpecialChars('Phone: (123) 456-7890', '-');
 |-----------|------|---------|-------------|
 | text | string | required | The input string to process |
 | replacement | string | '' | String to replace special characters with |
+
+#### <a id="removewords"></a>`removeWords(text, wordsToRemove)`
+
+Removes specified words from a string
+
+```javascript
+import { removeWords } from 'stringzy';
+
+removeWords('Hello world this is a test', ['this', 'is']);
+// Returns: 'Hello world a test'
+
+removeWords('Remove The Quick BROWN fox', ['the', 'brown']);
+// Returns: 'Remove Quick fox' 
+
+removeWords('JavaScript is awesome and JavaScript rocks', ['JavaScript']);
+// Returns: 'is awesome and rocks'
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to process |
+| wordsToRemove | string[] | required | Array of words to remove from the string |
 
 #### <a id="camelcase"></a>`camelCase(text)`
 
