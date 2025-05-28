@@ -4,6 +4,8 @@
 ![Downloads](https://img.shields.io/npm/dt/stringzy)
 ![License](https://img.shields.io/npm/l/stringzy)
 ![Bundle Size](https://img.shields.io/bundlephobia/min/stringzy)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 **A lightweight, zero-dependency NPM Package for elegant string manipulations. It provides a comprehensive range of text utilities for JavaScript and Node.js applications including transformations, validations, analysis, and formatting.**
 
