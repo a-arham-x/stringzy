@@ -17,3 +17,12 @@ export function isEmail(str) {
 export function isEmpty(str) {
   return str.trim().length === 0;
 }
+
+export function isDate(str) {
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+  if (!dateRegex.test(str)) return false;
+
+  const date = new Date(str);
+  return !isNaN(date.getTime());
+}
+
