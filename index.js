@@ -33,7 +33,8 @@ export const {
 export const {
   isURL,
   isEmail,
-  isEmpty
+  isEmpty,
+  isDate,
 } = validations;
 
 export const {

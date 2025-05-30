@@ -69,6 +69,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 ###  Validations
 - [isURL](#isurl) - Checks if a string is a valid URL
 - [isEmail](#isemail) - Checks if a string is a valid email address
+- [isDate](#isdate) - Checks if a string is a valid date
 - [isEmpty](#isempty) - Checks if a string is empty or contains only whitespace
 
 ###  Analysis
@@ -320,6 +321,24 @@ isEmail('invalid-email'); // false
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | text | string | required | The input string to validate as email |
+
+#### <a id="isdate"></a>`isDate(text)`
+
+Checks if a string is a valid date.
+
+```javascript
+import { isDate } from 'stringzy';
+
+isDate('2023-12-25'); // true
+isDate('12/25/2023'); // true
+isDate('December 25, 2023'); // true
+isDate('invalid-date'); // false
+isDate('2023-13-45'); // false
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to validate as date |
 
 #### <a id="isempty"></a>`isEmpty(text)`
 
