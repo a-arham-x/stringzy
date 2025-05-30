@@ -9,6 +9,8 @@
 
 **A lightweight, zero-dependency NPM Package for elegant string manipulations. It provides a comprehensive range of text utilities for JavaScript and Node.js applications including transformations, validations, analysis, and formatting.**
 
+[Checkout our Contributors!](#contri)
+
 ## ✨ Features
 
 - 💪 **Powerful** - Transform, validate, analyze, and format strings with minimal code
@@ -570,8 +572,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-
-## Contributors
+## <a id="contri"></a>`Contributors`
 
 <table>
     <tbody>
