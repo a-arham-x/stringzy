@@ -331,7 +331,6 @@ import { isDate } from 'stringzy';
 
 isDate('2023-12-25'); // true
 isDate('12/25/2023'); // true
-isDate('December 25, 2023'); // true
 isDate('invalid-date'); // false
 isDate('2023-13-45'); // false
 ```
