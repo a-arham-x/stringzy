@@ -594,6 +594,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
                     </sub>
                 </a>
             </td>
+          <td align="center">
+                <a href="https://github.com/thehardiik">
+                    <img src="https://avatars.githubusercontent.com/thehardiik" width="100px;"
+                        alt="Hardik Srivastav" />
+                    <br />
+                    <sub>
+                        <b>Hardik Srivastav</b>
+                    </sub>
+                </a>
+            </td>
         </tr>
     </tbody>
 </table>
