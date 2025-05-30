@@ -35,6 +35,12 @@ export function isDate(input) {
       split: (s) => s.split("-").map(Number),
       order: ["Y", "M", "D"],
     },
+      {
+      // Format: MM-DD-YYYY 
+      regex: /^\d{2}-\d{2}-\d{4}$/,
+      split: (s) => s.split("-").map(Number),
+      order: ["M", "D", "Y"],
+   },
     {
       // Format: DD-MM-YYYY 
       regex: /^\d{2}-\d{2}-\d{4}$/,
