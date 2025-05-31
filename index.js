@@ -28,6 +28,7 @@ export const {
   titleCase,
   constantCase,
   removeWords,
+  initials,
 } = transformations;
 
 export const {
