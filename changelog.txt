@@ -1,6 +1,16 @@
 CHANGELOG
 
 All notable changes to the `stringzy` package will be documented in this file.
+=============================================================================
+Version 2.1.0 - 2025-05-31
+-----------------------------------------------------------------------------
+
+ADDED:
+- Added new utility functions:
+  - `removeWords`:
+  - `isDate`: Validates if a string is a valid date
+- Added contributors section in README
+- Added new badges for open source and PRs
 
 =============================================================================
 Version 2.0.1 - 2025-05-23
