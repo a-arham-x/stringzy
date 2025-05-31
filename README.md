@@ -622,6 +622,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
                     </sub>
                 </a>
             </td>
+          <td align="center">
+                <a href="https://github.com/ahmedsemih">
+                    <img src="https://avatars.githubusercontent.com/ahmedsemih" width="100px;"
+                        alt="Ahmed Semih Erkan" />
+                    <br />
+                    <sub>
+                        <b>Ahmed Semih Erkan</b>
+                    </sub>
+                </a>
+            </td>
         </tr>
     </tbody>
 </table>
