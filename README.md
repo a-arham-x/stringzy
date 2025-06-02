@@ -2,7 +2,6 @@
 <div align="center">
   
   ![Stringzy banner](./assets/stringzy-banner2.jpg)
-<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 ![NPM Version](https://img.shields.io/npm/v/stringzy)
 ![Downloads](https://img.shields.io/npm/dt/stringzy)
