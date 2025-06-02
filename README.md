@@ -59,6 +59,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [capitalizeWords](#capitalizewords) - Capitalizes the first letter of each word
 - [removeSpecialChars](#removespecialchars) - Removes special characters from a string
 - [removeWords](#removewords) - Removes specified words from a string
+- [initials](#initials) - Extracts initials from a text string
 - [camelCase](#camelcase) - Converts the given string to Camel Case
 - [pascaslCase](#pascalcase) - Converts the given string to Pascal Case
 - [snakeCase](#snakecase) - Converts the given string to Snake Case   
@@ -196,6 +197,34 @@ removeWords('JavaScript is awesome and JavaScript rocks', ['JavaScript']);
 |-----------|------|---------|-------------|
 | text | string | required | The input string to process |
 | wordsToRemove | string[] | required | Array of words to remove from the string |
+
+#### <a id="initials"></a>`initials(text, limit)`
+
+Extracts initials from a text string.
+
+```javascript
+import { initials } from 'stringzy';
+
+initials('John Doe');
+// Returns: 'JD'
+
+initials('Alice Bob Charlie', 2);
+// Returns: 'AB'
+
+initials('Hello World Test Case');
+// Returns: 'HWTC'
+
+initials('single');
+// Returns: 's'
+
+initials('  Multiple   Spaces   Between  ');
+// Returns: 'MSB'
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to extract initials from |
+| limit | number | undefined | Maximum number of initials to return (optional) |
 
 #### <a id="camelcase"></a>`camelCase(text)`
 
