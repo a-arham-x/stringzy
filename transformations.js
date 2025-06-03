@@ -174,3 +174,17 @@ export function initials(text, limit) {
 
   return initialsArray.join("");
 }
+
+export function removeDuplicates(text) {
+  if (typeof text !== "string") {
+    throw new Error("Input must be a string");
+  }
+
+  const wordSet = new Set();
+
+  text.split(" ").forEach((word) => {
+    wordSet.add(word);
+  });
+
+  return Array.from(wordSet).join(" ");
+}

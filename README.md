@@ -68,6 +68,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [capitalizeWords](#capitalizewords) - Capitalizes the first letter of each word
 - [removeSpecialChars](#removespecialchars) - Removes special characters from a string
 - [removeWords](#removewords) - Removes specified words from a string
+- [removeDuplicates](#removeduplicates) - Removes specified words from a string
 - [initials](#initials) - Extracts initials from a text string
 - [camelCase](#camelcase) - Converts the given string to Camel Case
 - [pascaslCase](#pascalcase) - Converts the given string to Pascal Case
@@ -206,6 +207,27 @@ removeWords('JavaScript is awesome and JavaScript rocks', ['JavaScript']);
 |-----------|------|---------|-------------|
 | text | string | required | The input string to process |
 | wordsToRemove | string[] | required | Array of words to remove from the string |
+
+#### <a id="removeduplicates"></a>`removeDuplicates(text)`
+
+Removes duplicate case-sensitive words from a given text. 
+
+```javascript
+import { removeDuplicates } from 'stringzy';
+
+removeDuplicates('Hello world this is a is a test');
+// Returns: 'Hello world this is a test'
+
+removeDuplicates('Remove me me me me or Me');
+// Returns: 'Remove me or Me'' 
+
+removeDuplicates('JavaScript is not bad and not awesome');
+// Returns: 'JavaScript is not bad and awesome'
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to process |
 
 #### <a id="initials"></a>`initials(text, limit)`
 
