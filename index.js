@@ -29,6 +29,7 @@ export const {
   constantCase,
   removeWords,
   initials,
+  removeDuplicates
 } = transformations;
 
 export const {
