@@ -7,7 +7,7 @@
  * 
  * @module stringzy
  * @author Samarth Ruia
- * @version 2.1.0
+ * @version 2.2.0
  */
 
 import * as transformations from './transformations.js';

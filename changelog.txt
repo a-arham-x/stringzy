@@ -1,6 +1,16 @@
 CHANGELOG
 
 All notable changes to the `stringzy` package will be documented in this file.
+
+=============================================================================
+Version 2.1.0 - 2025-05-31
+-----------------------------------------------------------------------------
+
+ADDED:
+- Added new utility functions:
+  - `removeDuplicates`: Removes duplicate words from a string
+- Added the stringzy banner to the README
+
 =============================================================================
 Version 2.1.0 - 2025-05-31
 -----------------------------------------------------------------------------
