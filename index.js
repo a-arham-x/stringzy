@@ -42,7 +42,8 @@ export const {
 export const {
   wordCount,
   characterCount,
-  characterFrequency
+  characterFrequency,
+  complexity,
 } = analysis;
 
 export const {
