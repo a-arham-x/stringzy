@@ -1,7 +1,10 @@
 // test/coverage.js
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
+import fs from 'fs';
+import path from 'path';
+import { execSync } from 'child_process';
+import { fileURLToPath, pathToFileURL } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
 
 class CoverageChecker {
   constructor() {
@@ -151,11 +154,11 @@ class CoverageChecker {
 }
 
 // Run coverage check if this file is executed directly
-if (require.main === module) {
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
   const checker = new CoverageChecker();
   checker.checkCoverage().then(passed => {
     process.exit(passed ? 0 : 1);
   });
 }
 
-module.exports = CoverageChecker;
+export default CoverageChecker;
