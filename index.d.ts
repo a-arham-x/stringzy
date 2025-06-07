@@ -175,3 +175,12 @@ export function characterCount(str: string): number;
  * @returns An object where keys are characters and values are their frequencies.
  */
 export function characterFrequency(str: string): Record<string, number>;
+
+/**
+ * Checks if a string is a valid slug.
+ * A valid slug contains only lowercase letters, numbers, and single hyphens.
+ * It cannot start or end with a hyphen or contain consecutive hyphens.
+ * @param str The string to be checked.
+ * @returns `true` if the string is a valid slug, otherwise `false`.
+ */
+export function isSlug(str: string): boolean;

@@ -82,6 +82,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [isEmail](#isemail) - Checks if a string is a valid email address
 - [isDate](#isdate) - Checks if a string is a valid date
 - [isEmpty](#isempty) - Checks if a string is empty or contains only whitespace
+- [isSlug](#isslug) - Checks if a string is a valid slug
 
 ###  Analysis
 - [wordCount](#wordcount) - Counts the number of words in a string
@@ -411,6 +412,23 @@ isEmpty('hello'); // false
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | text | string | required | The input string to check for emptiness |
+
+#### <a id="isslug"></a>`isSlug(text)`
+
+Checks if a string is a valid slug.
+
+```javascript
+isSlug("hello-world");         // true
+isSlug("test-product-123");    // true
+isSlug("Hello-World");         // false (uppercase letters)
+isSlug("hello--world");        // false (consecutive hyphens)
+isSlug("-hello-world");        // false (starts with hyphen)
+isSlug("hello_world");         // false (underscore not allowed)
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to validate as slug |
 
 ---
 
