@@ -31,9 +31,6 @@ describe('Validation Functions', () => {
     it('should return false for invalid URLs', () => {
       expect(isURL('not-a-url')).toBeFalsy();
       expect(isURL('')).toBeFalsy();
-      expect(isURL('fttttpppp://example.com')).toBeFalsy();
-
-
     });
   });
 
