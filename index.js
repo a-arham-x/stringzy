@@ -37,6 +37,7 @@ export const {
   isEmail,
   isEmpty,
   isDate,
+  isSlug,
 } = validations;
 
 export const {
