@@ -86,6 +86,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 
 ###  Analysis
 - [wordCount](#wordcount) - Counts the number of words in a string
+- [readingDuration](#readingduration) - Calculates the reading duration of a given string
 - [characterCount](#charactercount) - Counts the number of characters in a string
 - [characterFrequency](#characterfrequency) - Analyzes character frequency in a string
 
@@ -436,6 +437,29 @@ isSlug("hello_world");         // false (underscore not allowed)
 ### 📊 Analysis
 
 Functions for analyzing string content and structure.
+
+#### <a id="readingduration"></a>`readingDuration(text, readingSpeed = 230)`
+
+Calculates the estimated reading duration for a given text based on an average reading speed.
+
+```javascript
+import { readingDuration } from 'stringzy';
+
+readingDuration('This is a sample text with twenty-three words to test the reading duration function.');
+// Returns: 0 (23 words / 230 words per minute ≈ 0 minutes)
+
+readingDuration('This text contains fifty words. It is designed to test the reading duration function with a larger input.', 200);
+// Returns: 1 (50 words / 200 words per minute ≈ 1 minute)
+
+readingDuration(Array(9999).fill('Word').join(' '));
+// Returns: 43 (9999 words / 230 words per minute ≈ 43 minutes)
+```
+
+| Parameter      | Type     | Default | Description                                                                 |
+|----------------|----------|---------|-----------------------------------------------------------------------------|
+| text           | string   | required | The input text for which the reading duration is to be calculated           |
+| readingSpeed   | number   | 230     | The reading speed in words per minute. Defaults to 230 (average reading speed) |
+
 
 #### <a id="wordcount"></a>`wordCount(text)`
 
