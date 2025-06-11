@@ -1,19 +1,7 @@
-
-export function capitalize(str) {
-  return str
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-    .join(' ');
-}
+export type PhoneFormat = 'us' | 'in' | 'international';
 
 
-export function formatNumber(num, separator = ',') {
-  const numStr = num.toString();
-  return numStr.replace(/\B(?=(\d{3})+(?!\d))/g, separator);
-}
-
-
-export function formatPhone(phone, format = 'us') {
+export function formatPhone(phone: string, format: PhoneFormat = 'us') {
   const digits = phone.replace(/\D/g, '');
   
   if (format === 'us' && digits.length === 10) {
@@ -25,7 +13,7 @@ export function formatPhone(phone, format = 'us') {
     const lastPart = digits.slice(-4);
     return `+${countryCode} (${areaCode}) ${firstPart}-${lastPart}`;
   }
-  else if (format === 'indian') {
+  else if (format === 'in') {
     if (digits.length === 10) {
       return `+91-${digits.slice(0, 5)}-${digits.slice(5)}`;
     } else if (digits.length === 12 && digits.startsWith('91')) {

@@ -1,11 +1,12 @@
 {
   "name": "stringzy",
   "version": "2.2.1",
-  "main": "index.js",
-  "type": "module",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
   },
   "author": "Samarth Ruia",
   "readmeFilename": "README.md",
@@ -41,5 +42,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Samarth2190/stringzy.git"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
   }
 }
