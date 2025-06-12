@@ -748,6 +748,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
     </tbody>
 </table>
 
+## 💬 Join the Community
+
+Have questions, ideas, or want to contribute? Join our [Discord server](https://discord.gg/DmvY7XJMdk) to chat with the community, discuss features, and help shape the future of the project.
 
 ## 📝 License
 
