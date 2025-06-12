@@ -15,7 +15,11 @@
 **A lightweight, zero-dependency NPM Package for elegant string manipulations. It provides a comprehensive range of text utilities for JavaScript and Node.js applications including transformations, validations, analysis, and formatting.**
 
 [Checkout our Contributors!](#contri)
+
+
 [Join the Community!](#community)
+
+
 
 
 </div>
@@ -742,6 +746,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
                     <br />
                     <sub>
                         <b>Michael van der Bend</b>
+                    </sub>
+                </a>
+            </td>
+           <td align="center">
+                <a href="https://github.com/mamphis">
+                    <img src="https://avatars.githubusercontent.com/mamphis" width="100px;"
+                        alt="mamphis" />
+                    <br />
+                    <sub>
+                        <b>mamphis</b>
                     </sub>
                 </a>
             </td>
