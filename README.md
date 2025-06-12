@@ -15,6 +15,7 @@
 **A lightweight, zero-dependency NPM Package for elegant string manipulations. It provides a comprehensive range of text utilities for JavaScript and Node.js applications including transformations, validations, analysis, and formatting.**
 
 [Checkout our Contributors!](#contri)
+[Join the Community!](#community)
 
 
 </div>
@@ -748,7 +749,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
     </tbody>
 </table>
 
-## 💬 Join the Community
+## <a id="community"></a>💬 Join the Community
 
 Have questions, ideas, or want to contribute? Join our [Discord server](https://discord.gg/DmvY7XJMdk) to chat with the community, discuss features, and help shape the future of the project.
 
