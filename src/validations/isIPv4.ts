@@ -1,4 +1,4 @@
-export const isIPv4 = (str: string): boolean => {
+export function isIPv4(str: string): boolean {
   const parts = str.split('.');
   if (parts.length !== 4) return false;
   
