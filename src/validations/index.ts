@@ -4,6 +4,7 @@ export { isEmpty } from './isEmpty';
 export { isSlug } from './isSlug';
 export { isURL } from './isURL';
 
+import { isIPv4 } from 'net';
 import { isDate } from './isDate';
 import { isEmail } from './isEmail';
 import { isEmpty } from './isEmpty';
@@ -16,4 +17,5 @@ export const validations = {
   isEmpty,
   isSlug,
   isURL,
+  isIPv4,
 };
