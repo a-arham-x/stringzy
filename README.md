@@ -68,10 +68,10 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [capitalizeWords](#capitalizewords) - Capitalizes the first letter of each word
 - [removeSpecialChars](#removespecialchars) - Removes special characters from a string
 - [removeWords](#removewords) - Removes specified words from a string
-- [removeDuplicates](#removeduplicates) - Removes specified words from a string
+- [removeDuplicates](#removeduplicates) - Removes duplicate words from a string
 - [initials](#initials) - Extracts initials from a text string
 - [camelCase](#camelcase) - Converts the given string to Camel Case
-- [pascaslCase](#pascalcase) - Converts the given string to Pascal Case
+- [pascalCase](#pascalcase) - Converts the given string to Pascal Case
 - [snakeCase](#snakecase) - Converts the given string to Snake Case   
 - [kebabCase](#kebabcase) - Converts the given string to Kebab Case
 - [titleCase](#titlecase) - Converts the given string to Title Case
@@ -221,7 +221,7 @@ removeDuplicates('Hello world this is a is a test');
 // Returns: 'Hello world this is a test'
 
 removeDuplicates('Remove me me me me or Me');
-// Returns: 'Remove me or Me'' 
+// Returns: 'Remove me or Me' 
 
 removeDuplicates('JavaScript is not bad and not awesome');
 // Returns: 'JavaScript is not bad and awesome'
@@ -584,11 +584,11 @@ stringzy.format.capitalize('hello world');
 
 ```jsx
 import React from 'react';
-import { truncate, capitalize, wordCount, isEmpty } from 'stringzy';
+import { truncateText, capitalize, wordCount, isEmpty } from 'stringzy';
 
 function ArticlePreview({ title, content }) {
   const displayTitle = isEmpty(title) ? 'Untitled' : capitalize(title);
-  const previewText = truncate(content, 150);
+  const previewText = truncateText(content, 150);
   const readingTime = Math.ceil(wordCount(content) / 200);
 
   return (
