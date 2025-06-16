@@ -1,4 +1,3 @@
-
 <div align="center">
   
   
@@ -81,6 +80,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [kebabCase](#kebabcase) - Converts the given string to Kebab Case
 - [titleCase](#titlecase) - Converts the given string to Title Case
 - [constantCase](#constantcase) - Converts the given string to Constant Case
+- [escapeHTML](#escapehtml) - Escapes HTML special characters to prevent XSS attacks
 
 ###  Validations
 - [isURL](#isurl) - Checks if a string is a valid URL
@@ -356,6 +356,30 @@ constantCase('this is a test'); // 'THIS_IS_A_TEST'
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | text | string | required | The input string to convert to Constant Case |
+
+#### <a id="escapehtml"></a>`escapeHTML(text)`
+
+Escapes HTML special characters to prevent XSS attacks by converting them to their HTML entities.
+
+```javascript
+import { escapeHTML } from 'stringzy';
+
+escapeHTML('Tom & Jerry');
+// Returns: 'Tom &amp; Jerry'
+
+escapeHTML('<script>alert("XSS")</script>');
+// Returns: '&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;'
+
+escapeHTML('<div class="test">content</div>');
+// Returns: '&lt;div class=&quot;test&quot;&gt;content&lt;/div&gt;'
+
+escapeHTML('Say "Hello" & it\'s < 5 > 2');
+// Returns: 'Say &quot;Hello&quot; &amp; it&#39;s &lt; 5 &gt; 2'
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to escape HTML characters from |
 
 ---
 
