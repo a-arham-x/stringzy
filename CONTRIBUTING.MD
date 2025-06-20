@@ -2,10 +2,10 @@
 Thanks for your interest in contributing to Stringzy! This document provides guidelines and instructions for contributing to the project.
 
 ## What We're Looking For
-**Bug fixes** - Help us solve issues
-**New string functions** - Add useful string manipulation methods
-**Documentation** - Improve examples and guides
-**Tests** - Add test coverage for existing or new features
+- **Bug fixes** - Help us solve issues
+- **New string functions** - Add useful string manipulation methods
+- **Documentation** - Improve examples and guides
+- **Tests** - Add test coverage for existing or new features
 
 ## Development Guide
 
@@ -21,18 +21,18 @@ Thanks for your interest in contributing to Stringzy! This document provides gui
     ```bash
     cd stringzy
     ```
-4.  Create a new branch:
-    ```bash
-    git checkout -b feat/a-great-new-feature
-    ```
-5. Install dependencies:
+
+4. Install dependencies:
     ```bash
     npm install
     ```
 
 
 ### Making Changes
-- Create a branch: `git checkout -b feat/your-feature-name`
+- Create a new branch:
+    ```bash
+    git checkout -b feature/amazing-feature
+    ```
 - Make your changes
 - Write tests for new functions
 - Keep functions simple and focused
@@ -49,8 +49,8 @@ Example:
 ```ts
 /**
  * Converts string to kebab-case
- * @param {string} str - Input string
- * @returns {string} Kebab-case string
+ * @param str Input string
+ * @returns Kebab-case string
  */
 function toKebabCase(str: string): string {
   if (!str) return '';
@@ -59,15 +59,28 @@ function toKebabCase(str: string): string {
 ```
 
 ## Submitting Changes
-1. Make sure tests pass: `npm test`
-2. Push to your fork
-3. Create a pull request with:
+1. Make sure tests pass: 
+    ```bash
+    npm test
+    ```
+
+2. Commit your changes: 
+    ```bash
+    git commit -m "feat: add some amazing feature"
+    ```
+
+3. Push to the branch
+    ```bash
+    git push origin feature/amazing-feature
+    ```
+
+4. Create a pull request with:
     - Clear description of changes
     - Why the change is needed
     - Any breaking changes
 
 ## Questions?
-Open an issue or start a discussion. We're happy to help!
+If you have any questions or need help, feel free to open an issue. We're happy to help!
 
 ---
 
