@@ -382,6 +382,29 @@ escapeHTML('Say "Hello" & it\'s < 5 > 2');
 |-----------|------|---------|-------------|
 | text | string | required | The input string to escape HTML characters from |
 
+#### <a id="masksegment"></a>`maskSegment(text, maskStart, maskEnd, maskChar?)`
+Masks a segment of a string by replacing characters between two indices with a specified character (default is '*').
+
+```javascript
+import { maskSegment } from 'stringzy';
+
+maskSegment('1234567890', 2, 6);
+// Returns: '12****7890'
+
+maskSegment('abcdef', 1, 4, '#');
+// Returns: 'a###ef'
+
+maskSegment('token', 0, 5);
+// Returns: '*****'
+
+```
+| Parameter |	Type | Default| Description | 
+|-----------|------|--------|-------------|
+|text	| string | required |	The input string to apply the masking to|
+|maskStart	|number|	required|	The start index (inclusive) of the segment to mask|
+|maskEnd	|number|	required|	The end index (exclusive) of the segment to mask|
+|maskChar	|string	|" * "|	The character to use for masking (must be one character)|
+
 ---
 
 ### ✅ Validations
