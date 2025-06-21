@@ -12,7 +12,7 @@ export { titleCase } from './titleCase';
 export { toSlug } from './toSlug';
 export { truncateText } from './truncateText';
 export { escapeHtml } from './escapeHTML';
-export { maskSegment } from './hideSegment';
+export { maskSegment } from './maskSegment';
 
 
 import { camelCase } from './camelCase';
@@ -29,7 +29,7 @@ import { titleCase } from './titleCase';
 import { toSlug } from './toSlug';
 import { truncateText } from './truncateText';
 import { escapeHtml } from './escapeHTML';
-import { maskSegment } from './hideSegment';
+import { maskSegment } from './maskSegment';
 
 export const transformations = {
     camelCase,
