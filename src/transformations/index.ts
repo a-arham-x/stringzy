@@ -12,6 +12,8 @@ export { titleCase } from './titleCase';
 export { toSlug } from './toSlug';
 export { truncateText } from './truncateText';
 export { escapeHtml } from './escapeHTML';
+export { maskSegment } from './hideSegment';
+
 
 import { camelCase } from './camelCase';
 import { capitalizeWords } from './capitalizeWords';
@@ -27,6 +29,7 @@ import { titleCase } from './titleCase';
 import { toSlug } from './toSlug';
 import { truncateText } from './truncateText';
 import { escapeHtml } from './escapeHTML';
+import { maskSegment } from './hideSegment';
 
 export const transformations = {
     camelCase,
@@ -43,4 +46,5 @@ export const transformations = {
     toSlug,
     truncateText,
     escapeHtml,
+    maskSegment
 };
