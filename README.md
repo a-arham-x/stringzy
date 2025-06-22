@@ -604,7 +604,7 @@ formatNumber('1234567', '.'); // '1.234.567'
 | number | string\|number | required | The number to format |
 | separator | string | ',' | The separator to use for thousands |
 
-#### <a id="formatphone"></a>`formatPhone(phone, format = 'us')`
+#### <a id="formatphone"></a>`formatPhone(phone, format = 'US')`
 
 Formats a phone number string to standard format.
 
