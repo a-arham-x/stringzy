@@ -822,6 +822,18 @@ Contributions are welcome! Please read our [contribution guidelines](CONTRIBUTIN
                 </a>
             </td>
         </tr>
+      <tr>
+      <td align="center">
+                <a href="https://github.com/Alimedhat000">
+                    <img src="https://avatars.githubusercontent.com/Alimedhat000" width="100px;"
+                        alt="Ali Medhat" />
+                    <br />
+                    <sub>
+                        <b>Ali Medhat</b>
+                    </sub>
+                </a>
+            </td>
+      </tr>
     </tbody>
 </table>
 
