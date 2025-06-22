@@ -81,7 +81,6 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [titleCase](#titlecase) - Converts the given string to Title Case
 - [constantCase](#constantcase) - Converts the given string to Constant Case
 - [escapeHTML](#escapehtml) - Escapes HTML special characters to prevent XSS attacks
-- [maskSegment](#masksegment) - Masks a segment of a string by replacing characters between two indices with a specified character
 
 ###  Validations
 - [isURL](#isurl) - Checks if a string is a valid URL
@@ -90,6 +89,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [isEmpty](#isempty) - Checks if a string is empty or contains only whitespace
 - [isSlug](#isslug) - Checks if a string is a valid slug
 - [isIPv4](#isipv4) - Checks if a string is a valid IPv4 address
+- [isHexColor](#ishexcolor) - Checks if the input string is a valid hex color
 
 ###  Analysis
 - [wordCount](#wordcount) - Counts the number of words in a string
@@ -383,29 +383,6 @@ escapeHTML('Say "Hello" & it\'s < 5 > 2');
 |-----------|------|---------|-------------|
 | text | string | required | The input string to escape HTML characters from |
 
-#### <a id="masksegment"></a>`maskSegment(text, maskStart, maskEnd, maskChar?)`
-Masks a segment of a string by replacing characters between two indices with a specified character (default is '*').
-
-```javascript
-import { maskSegment } from 'stringzy';
-
-maskSegment('1234567890', 2, 6);
-// Returns: '12****7890'
-
-maskSegment('abcdef', 1, 4, '#');
-// Returns: 'a###ef'
-
-maskSegment('token');
-// Returns: '*****'
-
-```
-| Parameter |	Type | Default| Description | 
-|-----------|------|--------|-------------|
-|text	| string | required |	The input string to apply the masking to|
-|maskStart	|number|	`0`|	The start index (inclusive) of the segment to mask|
-|maskEnd	|number|	`text.length`|	The end index (exclusive) of the segment to mask|
-|maskChar	|string	|`'*'` |	The character to use for masking (must be one character)|
-
 ---
 
 ### ✅ Validations
@@ -503,6 +480,26 @@ isIPv4('192.168.1.a'); // false (non-numeric)
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | text | string | required | The input string to validate as IPv4 address |
+
+
+#### <a id="ishexcolor"></a>`isHexColor(text)`
+
+Checks if a string is a valid Hex color.
+
+```javascript
+import { isHexColor } from 'stringzy';
+
+isHexColor('#fff');       // true
+isHexColor('fff');        // true
+isHexColor('#a1b2c3');    // true
+isHexColor('123abc');     // true
+isHexColor('#1234');      // false
+isHexColor('blue');       // false
+```
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| text | string | required | The input string to validate as Hex color |
 
 ---
 
@@ -604,7 +601,7 @@ formatNumber('1234567', '.'); // '1.234.567'
 | number | string\|number | required | The number to format |
 | separator | string | ',' | The separator to use for thousands |
 
-#### <a id="formatphone"></a>`formatPhone(phone, format = 'US')`
+#### <a id="formatphone"></a>`formatPhone(phone, format = 'us')`
 
 Formats a phone number string to standard format.
 
@@ -822,18 +819,6 @@ Contributions are welcome! Please read our [contribution guidelines](CONTRIBUTIN
                 </a>
             </td>
         </tr>
-      <tr>
-      <td align="center">
-                <a href="https://github.com/Alimedhat000">
-                    <img src="https://avatars.githubusercontent.com/Alimedhat000" width="100px;"
-                        alt="Ali Medhat" />
-                    <br />
-                    <sub>
-                        <b>Ali Medhat</b>
-                    </sub>
-                </a>
-            </td>
-      </tr>
     </tbody>
 </table>
 
