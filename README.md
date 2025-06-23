@@ -53,7 +53,7 @@ pnpm add stringzy
 import stringzy from 'stringzy';
 
 // Or import specific functions
-import { toUpperCase, isEmail, wordCount, formatPhone } from 'stringzy';
+import { isEmail, wordCount, formatPhone } from 'stringzy';
 
 // Or import by namespace
 import { transform, validate, analyze, format } from 'stringzy';
