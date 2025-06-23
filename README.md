@@ -571,6 +571,24 @@ characterFrequency('hello'); // { h: 1, e: 1, l: 2, o: 1 }
 |-----------|------|---------|-------------|
 | text | string | required | The input string to analyze character frequency |
 
+#### <a id="stringsimilarity"></a>`stringSimilarity(textA, textB, algorithm = 'Levenshtein')`
+
+Calculates the percentage similarity between two texts using the selected algorithm.
+Method returns a percentage (0–100) value indicating how similar the two strings are.
+```javascript
+stringSimilarity('kitten', 'sitting'); // Returns: 57.14
+
+stringSimilarity('hello', 'hello'); // Returns: 100
+
+stringSimilarity('flaw', 'lawn', 'Damerau-Levenshtein'); // Returns: 50
+```
+
+| Parameter  | Type   | Default              | Description                                                                 |
+|------------|--------|----------------------|-----------------------------------------------------------------------------|
+| textA      | string | required             | The first text to compare.                                                  |
+| textB      | string | required             | The second text to compare.                                                 |
+| algorithm  | string | 'Levenshtein'        | The algorithm to use: 'Levenshtein' or 'Damerau-Levenshtein'.               |
+
 ---
 
 ### 🎨 Formatting
