@@ -4,18 +4,16 @@ import {stringSimilarity} from "../../analyzing/stringSimilarity";
 
 describe('stringSimilarity', () => {
     describe('Param error handling', () => {
-        it('should throw if first text argument is not a string', () => {
-            assert.throws(() => stringSimilarity(123 as any, 'abc'), /Both arguments must be strings/i);
-        });
+        it('should throw if text arguments are not a string', () => {
+            assert.throws(() => stringSimilarity(123 as any, 'abc'), /Both text arguments must be strings/i);
+            assert.throws(() => stringSimilarity('abc', null as any), /Both text arguments must be strings/i);
 
-        it('should throw if second text argument is not a string', () => {
-            assert.throws(() => stringSimilarity('abc', null as any), /Both arguments must be strings/i);
         });
 
         it('should throw if algorithm argument is invalid', () => {
             assert.throws(
                 () => stringSimilarity('abc', 'abc', 'invalid' as any),
-                /Invalid algorithm param. Should be 'Levenshtein' or 'Damerau-Levenshtein'/i
+                /Invalid optional algorithm param. Should be 'Levenshtein' or 'Damerau-Levenshtein'/i
             );
         });
     });
