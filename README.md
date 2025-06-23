@@ -98,7 +98,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [readingDuration](#readingduration) - Calculates the reading duration of a given string
 - [characterCount](#charactercount) - Counts the number of characters in a string
 - [characterFrequency](#characterfrequency) - Analyzes character frequency in a string
-
+- [stringSimilarity](#stringsimilarity) - Calculates the percentage similarity between two strings
 ###  Formatting
 - [capitalize](#capitalize) - Capitalizes the first letter of each word
 - [formatNumber](#formatnumber) - Formats a number string with thousand separators
