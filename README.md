@@ -429,7 +429,7 @@ splitChunks('helloworld');
 ```
 | Parameter |	Type | Default| Description | 
 |-----------|------|--------|-------------|
-|text	| string | required |	The input string that needs to be chuked|
+|text	| string | required |	The input string that needs to be chunked|
 |chunkSize	|number|	`1`|	The size of each chunk in which the string is to be split.|
 
 ---
