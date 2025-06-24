@@ -82,6 +82,7 @@ const count = stringzy.analyze.wordCount('Hello world'); // 2
 - [constantCase](#constantcase) - Converts the given string to Constant Case
 - [escapeHTML](#escapehtml) - Escapes HTML special characters to prevent XSS attacks
 - [maskSegment](#masksegment) - Masks a segment of a string by replacing characters between two indices with a specified character
+- [deburr](#deburr) – Removes accents and diacritical marks from a string
 
 
 ###  Validations
