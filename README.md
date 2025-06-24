@@ -408,6 +408,26 @@ maskSegment('token');
 |maskEnd	|number|	`text.length`|	The end index (exclusive) of the segment to mask|
 |maskChar	|string	|`'*'` |	The character to use for masking (must be one character)|
 
+#### <a id="deburr"></a>deburr(text)
+Removes accents and diacritics from letters in a string (e.g. déjà vu → deja vu).
+
+```javascript
+import { deburr } from 'stringzy';
+
+deburr('déjà vu');
+// Returns: 'deja vu'
+
+deburr('Élève São Paulo');
+// Returns: 'Eleve Sao Paulo'
+
+deburr('über cool');
+// Returns: 'uber cool'
+
+```
+| Parameter | Type   | Default  Description                               |
+| --------- | ------ | -------- | ----------------------------------------- |
+| text      | string | required | The input string to strip diacritics from |
+
 ---
 
 ### ✅ Validations
